@@ -1,6 +1,6 @@
 # Motion Capture with Kinect
 _________________________________________________________________
-Clemence Lapeyre (acl26), Sanmi Oyenuga (ojo), Gray Williams
+Clemence Lapeyre (acl26), Sanmi Oyenuga (ojo), Gray Williams (gmw9)
 Duke University, Fall Spring 2016
 CS290-04: 3D Geometry
 Final Project: Motion Capture with Kinect, 3D Lemur Tracking
