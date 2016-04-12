@@ -16,3 +16,23 @@ Purpose:
 Features:
 - "Skinning" animations (animation of surfaces based on motion capture data)
 - Lemur Motion Tracking 
+
+_________________________________________________________________
+
+Paper and Slide Document Summary:
+
+The two main stages that involved in image processing and data collection are
+1) Depth Mapping
+2) Body Position Inference.
+
+Depth Mapping is performed by using the 3D Depth sensors on the kinect controller
+with the depth computation performed by a PrimeSense hardware built in the Kinect.
+Details of the hardware are not publicly known, but speculative analysis had
+deduced the depth computation is performed using structured light. The kinect
+projects infrared light with a speckle pattern and computes the relative
+distances from and between objects using the depth focus principle (farther
+objects appear to be blurrier). This distinction is performed using astigmatic
+lenses with varying focal lengths e.g. circles become ellipses when projected
+and the orientation of these ellipses depend on depth.
+
+2) Body Position Inference:
