@@ -76,7 +76,13 @@ saved in Documents->KinectStudio->Repository by default.
 
 3) Playback
 
-The original data can be played back in the Kinect Studio and seen in 2D or 3D. To see
-the skeletal data, open the SDK browser and select a BodyBasics App to run. In the
-Kinect Studio, click the play button. Skeletal Data will show in the BodyBasics App.
-This can be done offline and does not require being connected to the Kinect.
+The original data can be played back in the Kinect Studio and seen in 2D or 3D. This 
+can be done offline and does not require being connected to the Kinect. To see the 
+skeletal data, connect to the Kinect and open the SDK browser. Select a BodyBasics
+app to run. Then, in the Kinect Studio, click the play button. Skeletal Data will 
+be displayed in the BodyBasics App.
+
+
+Recordings are saved as .xef files. Because of size, we will be uploading them to
+Google Drive. Our test data file can be found here:
+https://drive.google.com/folderview?id=0B8IeT0G1k4MaSEQ3c195NkJmS0U&usp=sharing
