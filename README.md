@@ -58,12 +58,14 @@ ______________________________________________________________________________
 Recording and Playback:
 
 1) Types of Data
+
 Color, audio, depth, and infrared data can be recorded and played back. BodyIndex and
 BodyFrame data can only be recorded. If you want to playback skeleton, you need to 
 record infrared and depth; the body tracking / skeleton data will be generated from
 that data.
 
 2) How to Record
+
 Go to the recording tab in the Kinect Studio. Select the desired streams (for body-
 tracking and gesture building, these are Body Fram, Depth, IR, and Sensor Telemetry).
 Click record, then perform the gestures that you want to use for training- both 
@@ -73,6 +75,7 @@ points (for debugging), and putting markers for adding metadata. The recordings 
 saved in Documents->KinectStudio->Repository by default. 
 
 3) Playback
+
 The original data can be played back in the Kinect Studio and seen in 2D or 3D. To see
 the skeletal data, open the SDK browser and select a BodyBasics App to run. In the
 Kinect Studio, click the play button. Skeletal Data will show in the BodyBasics App.
