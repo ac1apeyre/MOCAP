@@ -2,7 +2,7 @@
 _________________________________________________________________
 Clemence Lapeyre (acl26), Sanmi Oyenuga (ojo), Gray Williams (gmw9)
 
-Duke University, Fall Spring 2016
+Duke University, Spring 2016
 
 CS290-04: 3D Geometry
 
