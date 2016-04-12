@@ -25,7 +25,7 @@ The two main stages that involved in image processing and data collection are
 1) Depth Mapping
 2) Body Position Inference.
 
-Depth Mapping is performed by using the 3D Depth sensors on the kinect controller
+1) Depth Mapping is performed by using the 3D Depth sensors on the kinect controller
 with the depth computation performed by a PrimeSense hardware built in the Kinect.
 Details of the hardware are not publicly known, but speculative analysis had
 deduced the depth computation is performed using structured light. The kinect
@@ -48,3 +48,28 @@ trees with results as probability distributions as opposed to single decisions i
 the case of trees. Using this randomized decisions tree as a training data set,
 the mean shift algorithm can then be used to compute modes of probability
 distributions.
+
+______________________________________________________________________________
+
+Recording and Playback:
+
+1) Types of Data
+Color, audio, depth, and infrared data can be recorded and played back. BodyIndex and
+BodyFrame data can only be recorded. If you want to playback skeleton, you need to 
+record infrared and depth; the body tracking / skeleton data will be generated from
+that data.
+
+2) How to Record
+Go to the recording tab in the Kinect Studio. Select the desired streams (for body-
+tracking and gesture building, these are Body Fram, Depth, IR, and Sensor Telemetry).
+Click record, then perform the gestures that you want to use for training- both 
+positive and negative. When done, click stop recording. The PLAY tab will open with a
+timeline and swim lanes. The first swim lane can be used to select range, place pause
+points (for debugging), and putting markers for adding metadata. The recordings are 
+saved in Documents->KinectStudio->Repository by default. 
+
+3) Playback
+The original data can be played back in the Kinect Studio and seen in 2D or 3D. To see
+the skeletal data, open the SDK browser and select a BodyBasics App to run. In the
+Kinect Studio, click the play button. Skeletal Data will show in the BodyBasics App.
+This can be done offline and does not require being connected to the Kinect.
