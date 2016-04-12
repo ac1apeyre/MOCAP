@@ -19,7 +19,7 @@ Features:
 
 _________________________________________________________________
 
-Paper and Slide Document Summary:
+Paper Summary and Slide Document Summary:
 
 The two main stages that involved in image processing and data collection are
 1) Depth Mapping
@@ -36,3 +36,15 @@ lenses with varying focal lengths e.g. circles become ellipses when projected
 and the orientation of these ellipses depend on depth.
 
 2) Body Position Inference:
+Using known 100,000 depth images with known skeletons from motion capture data,
+we can obtain millions of training examples by rendering dozens more for each
+real image. These examples are then used as templates in machine learning.
+A randomized decision tree is generated using the knowledge from the known
+skeletons to help infer the position of a body. Due the millions of training
+examples the decision tree will have too many possibilities of questions so a
+random subset of about 2,000 questions are utilized in each run to generate
+the decision trees. A randomized decision forest is generated from conglomerated
+trees with results as probability distributions as opposed to single decisions in
+the case of trees. Using this randomized decisions tree as a training data set,
+the mean shift algorithm can then be used to compute modes of probability
+distributions.
