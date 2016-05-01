@@ -86,3 +86,21 @@ be displayed in the BodyBasics App.
 Recordings are saved as .xef files. Because of size, we will be uploading them to
 Google Drive. Our test data file can be found here:
 https://drive.google.com/folderview?id=0B8IeT0G1k4MaSEQ3c195NkJmS0U&usp=sharing
+
+
+
+_________________________________________________________________________
+
+Joint Position Data
+
+
+foreach (Joint joint in body.Joints)
+{
+    // 3D coordinates in meters
+    CameraSpacePoint cameraPoint = joint.Position;
+    float x = cameraPoint.X;
+    float y = cameraPoint.Y;
+    float z = cameraPoint.Z;
+}
+
+#TODO: get x, y, and z coordinates of each joint for each frame
